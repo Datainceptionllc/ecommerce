@@ -157,7 +157,7 @@ function Product() {
     const getProduct = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5001/api/products/find/${id}`
+          `https://ecom-backend-k3xo.onrender.com/api/products/find/${id}`
         );
         setProduct(res.data);
       } catch {}
